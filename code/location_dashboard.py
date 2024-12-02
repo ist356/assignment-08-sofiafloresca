@@ -12,7 +12,7 @@ locations_df = pd.read_csv('./cache/top_locations.csv')
 location = st.selectbox('Select a location', locations_df['location'])
 if location:
     filtered = tickets_df[tickets_df['location'] == location]
-    num_tickets = len(filtered)
+    tickets = len(filtered)
     amount = filtered['amount'].sum()
 
     fig1, ax1 = plt.subplots()
@@ -26,7 +26,7 @@ if location:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.metric("Total tickets issued", num_tickets)
+        st.metric("Total tickets issued", tickets)
         st.pyplot(fig1)
 
     with col2:

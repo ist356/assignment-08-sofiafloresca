@@ -23,3 +23,4 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+I had a hard time remembering some of the syntax for data visualizations, specifically when displaying them with streamlit. I used the solution and CoPilot to help with this and otherwise found it pretty straightforward.
